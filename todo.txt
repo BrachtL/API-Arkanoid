@@ -1,0 +1,23 @@
+COMMIT
+TESTES (arquivo e server separado, para fazer as vezes do insomnia)
+
+When I finish a stage, compare the obtained score with the locally saved score in the
+smartphone. If it greater than that (or if there is no highscore locally saved):
+post the userHighscore
+  during this post, I have to check if there is other highscore from this user saved in the db,
+  compare both and keep the greater one. If it is the one that is being posted, save it locally as well
+  
+  ok resultados deste post:
+    ok previousUserHighscore (para saber se já tinha um, se não tinha colocar 0 na API e tratar no android, e pra saber se melhorou),
+    ok greaterUserHighscore_index (para saber se está entre os 10. Tratar isso só se for melhor que o anterior),
+  
+  
+  
+  
+  
+  ok simular erros no server
+    ok 1 - colocar errado as credenciais do db
+      quero que venha uma resposta para o client com a mensagem de que a conexão com o db não ocorreu
+    ok 2 - fazer um query com erro (erro no comando e erro no nome de tables e columns)
+      ver o que acontece e tratar o erro para o client saber na resposta
+  
